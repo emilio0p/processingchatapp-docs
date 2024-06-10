@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagrama de componentes</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/diagram.css" />
+
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <nav class="ocultarSeccionNav" id="nav">
+      <!-- Tipo 1 -->
+      <div class="header">
+        <h2>Processing Chat App</h2>
+        <i id="mostrarOcultarNav" class="fas fa-bars icono-nav"></i>
+      </div>
+
+      <!-- Tipo 2 -->
+      <div class="seccionNav">
+        <div class="visible">
+          <i class="fa-solid fa-user" title="Emilio Orduña Peña"></i>
+          <a href="../index.html"><p>Sobre mí</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-home" title="Inicio"></i>
+          <a href="home.html"><p>Introducción</p></a>
+        </div>
+        <div class="visible">
+          <i class="fa-solid fa-bolt" title="Funcionalidades y Tecnologías"></i>
+          <a href="features.html"><p>Funcionalidades</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-download" title="Instalación"></i>
+          <a href="installation.html"><p>Instalación</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-play-circle" title="Uso"></i>
+          <a href="usage.html"><p>Uso</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-sitemap" title="Diagramas"></i>
+          <a href="diagrams.html"><p>Diagramas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fa-solid fa-vial-circle-check" title="Pruebas"></i>
+          <a href="tests.html"><p>Pruebas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-lightbulb" title="Conclusión"></i>
+          <a href="conclusion.html"><p>Conclusión</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-link" title="Referencias"></i>
+          <a href="references.html"><p>Referencias</p></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Contenido específico de la página de Diagrama de componentes -->
+      <h1>Diagrama de componentes</h1>
+      <p>Imagen del diagrama de componentes.</p>
+      <div class="container-detail">
+        <a
+          href="../img/componentes.png"
+          target="_blank"
+          class="image-container-detail"
+        >
+          <img src="../img/componentes.png" alt="Diagrama de Componentes" />
+        </a>
+      </div>
+      <h4 class="container-detail">Descripción del diagrama de componentes</h4>
+      <br />
+      <p class="container-detail">
+        Este proyecto se compone de diferentes partes que trabajan juntas para
+        dar la experiencia que los usuarios ven.
+      </p>
+      <p class="container-detail">
+        En la parte superior del diagrama tenemos al 'Usuario', que representa a
+        las personas que utilizan nuestra aplicación.
+      </p>
+      <p class="container-detail">
+        Justo debajo del usuario, encontramos la parte del 'Front (Cliente)',
+        que es la cara visible de la aplicación, lo que los usuarios ven y con
+        lo que interactúan. Aquí utilizamos Angular para crear una interfaz
+        amigable de chats.
+      </p>
+      <p class="container-detail">
+        A la derecha, está el 'Servidor', que es donde se procesan las
+        solicitudes de los usuarios. Utilizamos Node.js y JavaScript para
+        manejar esta parte y asegurarnos de que todo funcione correctamente.
+      </p>
+      <p class="container-detail">
+        En la parte inferior, encontramos un componente clave llamado 'API', que
+        actúa como un intermediario entre el front-end, el servidor y la base de
+        datos. Utilizamos FastAPI para esta capa, que nos permite gestionar las
+        solicitudes de manera rápida y eficiente.
+      </p>
+      <p class="container-detail">
+        A la derecha del todo, tenemos la 'Base de datos', que es donde
+        almacenamos toda la información necesaria para que la aplicación
+        funcione. Utilizamos MySQL para gestionar eficientemente los datos. En
+        resumen, nuestro diagrama muestra cómo todas estas partes se conectan y
+        trabajan juntas para ofrecer una experiencia fluida a los usuarios de
+        nuestra aplicación."
+      </p>
+    </main>
+
+    <footer>
+      <span
+        >&copy; 2024 Emilio Orduña Peña | Todos los derechos reservados</span
+      >
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagrama de Entidad-Relación</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/diagram.css" />
+
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <nav class="ocultarSeccionNav" id="nav">
+      <!-- Tipo 1 -->
+      <div class="header">
+        <h2>Processing Chat App</h2>
+        <i id="mostrarOcultarNav" class="fas fa-bars icono-nav"></i>
+      </div>
+
+      <!-- Tipo 2 -->
+      <div class="seccionNav">
+        <div class="visible">
+          <i class="fa-solid fa-user" title="Emilio Orduña Peña"></i>
+          <a href="../index.html"><p>Sobre mí</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-home" title="Inicio"></i>
+          <a href="home.html"><p>Introducción</p></a>
+        </div>
+        <div class="visible">
+          <i class="fa-solid fa-bolt" title="Funcionalidades y Tecnologías"></i>
+          <a href="features.html"><p>Funcionalidades</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-download" title="Instalación"></i>
+          <a href="installation.html"><p>Instalación</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-play-circle" title="Uso"></i>
+          <a href="usage.html"><p>Uso</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-sitemap" title="Diagramas"></i>
+          <a href="diagrams.html"><p>Diagramas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fa-solid fa-vial-circle-check" title="Pruebas"></i>
+          <a href="tests.html"><p>Pruebas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-lightbulb" title="Conclusión"></i>
+          <a href="conclusion.html"><p>Conclusión</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-link" title="Referencias"></i>
+          <a href="references.html"><p>Referencias</p></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Contenido específico de la página de Diagrama de Entidad-Relación -->
+      <h1>Diagrama de Entidad-Relación</h1>
+      <p>Imagen del diagrama de Entidad-Relación.</p>
+      <div class="container-detail">
+        <a
+          href="../img/entidad-relacion.png"
+          target="_blank"
+          class="image-container-detail"
+        >
+          <img
+            src="../img/entidad-relacion.png"
+            alt="Diagrama de Entidad-Relación"
+          />
+        </a>
+      </div>
+      <h4 class="container-detail">
+        Descripción del diagrama de entidad-relación.
+      </h4>
+      <br />
+
+      <div class="container-detail">
+        <p>
+          El diagrama ilustra las relaciones entre diferentes entidades (tablas)
+          en una base de datos para un sistema que parece manejar roles de
+          usuario, mensajería y gestión de chats.
+        </p>
+        <ul>
+          <li>
+            <strong>Roles:</strong> Contiene rol_id y rol_name. Tiene una
+            relación uno a uno etiquetada como "Contiene" con la entidad
+            Usuarios, indicando que cada usuario tiene un rol.
+          </li>
+          <li>
+            <strong>Usuarios:</strong> Contiene user_id, rol_id, email,
+            password, username y phone. Tiene una relación uno a uno con la
+            entidad Roles y una relación uno a muchos con la entidad Mensajes,
+            indicando que un usuario puede enviar muchos mensajes.
+          </li>
+          <li>
+            <strong>Mensajes:</strong> Contiene message_id, chat_id, user_id,
+            timestamp y content. Está relacionada con la entidad Usuarios a
+            través de la relación "Envía", indicando que los usuarios envían
+            mensajes.
+          </li>
+          <li>
+            <strong>Chats Activos:</strong> Contiene chat_id, client_id,
+            chat_name, admin_id, delivery_date, form_id y status_id. Tiene una
+            relación uno a muchos con la entidad Usuarios etiquetada como
+            "Pertenece A", indicando que un usuario puede tener varios chats, y
+            una relación uno a uno con las entidades Tipos de Formulario y
+            Estado de Chat.
+          </li>
+          <li>
+            <strong>Formulario:</strong> Contiene form_id y form_name. Está
+            relacionada con Chats Activos a través de la relación "Tiene",
+            indicando que cada chat activo tiene un formulario.
+          </li>
+          <li>
+            <strong>Estado de Chat:</strong> Contiene status_id y status_name.
+            También tiene una relación "Tiene" con Chats Activos, indicando que
+            cada chat activo tiene un estado.
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <span
+        >&copy; 2024 Emilio Orduña Peña | Todos los derechos reservados</span
+      >
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
