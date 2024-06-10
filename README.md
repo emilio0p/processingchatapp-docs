@@ -1,4 +1,4 @@
-# <center>Programming Chat App</center>
+# <center>Programming Chat App <img src="image/chat.png" width="50"></center>
 
 ## <center>Proyecto final de Grado DAM</center>
 
@@ -111,33 +111,77 @@ En resumen, el proyecto busca transformar la manera en que las empresas locales 
 
 Desde el punto de vista del desarrollador que desea descargar y personalizar el proyecto desde GitHub, los pasos a seguir serian los siguientes:
 
-1. **Clonar el Repositorio desde GitHub:**
+### Requisitos previos
 
-   Para comenzar, necesitas clonar el repositorio del proyecto desde GitHub. Abre la terminal y ejecuta el siguiente comando:
+1. Primero tenemos que tener instalado en el sistema:
+   - Python 3.x
+   - Node.js y npm (o yarn)
+   - Git
 
-   ```bash
-   git clone <URL_del_repositorio>
+#### Backend (FastAPI)
+
+1. Clonar el repositorio "processing-chat-fastapi":
+
+   ```
+   git clone https://github.com/emilio0p/processing-chat-fastapi.git
    ```
 
-2. **Instalar las Dependencias:**
+2. Acceder a la carpeta del backend:
 
-   Una vez que se haya clonado el repositorio, navegamos hasta la carpeta del proyecto en la terminal y ejecutaremos el siguiente comando para instalar todas las dependencias necesarias:
+   ```
+   cd processing-chat-fastapi
+   ```
 
-   ```bash
+3. Crear y activar un entorno virtual de Python:
+
+   ```
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+4. Instalar las dependencias del backend:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Configurar las variables de entorno necesarias, como la conexión a la base de datos y las claves de autenticación.
+
+6. Iniciar el servidor FastAPI:
+   ```
+   uvicorn main:app --reload
+   ```
+
+#### Frontend (Angular)
+
+1. Clonar el repositorio "processing-chat-angular":
+
+   ```
+   git clone https://github.com/emilio0p/processing-chat-angular.git
+   ```
+
+2. Acceder a la carpeta del frontend:
+
+   ```
+   cd processing-chat-angular
+   ```
+
+3. Instalar las dependencias del frontend:
+
+   ```
    npm install
    ```
 
-   Este comando instalará todas las dependencias especificadas en el archivo `package.json`, incluyendo las librerías y frameworks necesarios para el funcionamiento del proyecto.
+4. Configurar las variables de entorno necesarias, como la URL de la API del backend.
 
-3. **Iniciar el Servidor:**
-
-   Después de instalar las dependencias, podemos iniciar el servidor ejecutando el siguiente comando:
-
-   ```bash
-   node server.js
+5. Iniciar el servidor de desarrollo de Angular:
+   ```
+   ng serve
    ```
 
-   Este comando iniciará el servidor y hará que la aplicación esté disponible en nuestro entorno local para su visualización y personalización.
+### Acceder a la Aplicación
+
+1. Abre tu navegador web y visita `http://localhost:4200` para acceder a la aplicación.
 
 ## Guía de Uso
 
@@ -147,7 +191,7 @@ Desde el punto de vista del desarrollador que desea descargar y personalizar el 
 
 1. ##### **Abrir la Aplicación en tu Navegador:**
 
-   Abre tu navegador web preferido e introduce la dirección URL: _INTRODUCIR URL_
+   Abre tu navegador web preferido e introduce la dirección URL: https://processingchatapp.azurewebsites.net/auth/login
 
 2. ##### **Iniciar Sesión:**
 
@@ -211,7 +255,7 @@ _Haciendo click sobre el botón rojo, podemos eliminar el chat._
 
 1. ##### **Abrir la Aplicación en tu Navegador:**
 
-   Abre tu navegador web preferido e introduce la dirección URL donde se está ejecutando la aplicación.
+   Abre tu navegador web preferido e introduce la dirección URL: https://processingchatapp.azurewebsites.net/auth/login
 
 2. ##### **Iniciar Sesión:**
 
@@ -262,11 +306,11 @@ _Haciendo click sobre el botón rojo, cerramos la sesión del cliente._
 
 ## Enlace a la Documentación
 
-[Documentación completa del proyecto](#)
+https://emilio0p.github.io/processingchatapp-docs/
 
 ## Enlace a Figma de la Interfaz
 
-[Visualiza los diseños de la interfaz en Figma](#)
+https://www.figma.com/design/UxxLIk0mL3kuOLOXkXy6Wi/CHAT_TFG?node-id=0-1&t=bUYcETxCWEowFckg-1
 
 ## Conclusión
 
@@ -278,22 +322,30 @@ En resumen, el "Programming Chat App" es un paso fundamental hacia la digitaliza
 
 ## Contribuciones y Agradecimientos
 
-- Se agradece a los colaboradores y mentores que han contribuido al desarrollo del proyecto.
+Quiero expresar mi sincero agradecimiento a todas las personas que han contribuido y apoyado en la realización de este proyecto TFG.
+
+Agradezco a mis profesores por su orientación, apoyo y conocimientos compartidos a lo largo de este proceso académico. Quiero agradecer a mis compañeros por su colaboración, intercambio de ideas y motivación mutua durante el desarrollo de este proyecto. Un agradecimiento especial a mis padres por su inquebrantable apoyo, comprensión y aliento en cada paso de mi camino académico. Dedico un agradecimiento especial a Teresa, cuya aportación ha sido fundamental para el éxito y la calidad de este trabajo. Y otro especial agradecimiento a Maria Fernanda por la idea y ayuda durante todo el proyecto.
+
+Estoy profundamente agradecido por el apoyo brindado por todas estas personas, cuyo compromiso y ayuda han sido vitales en la culminación de este proyecto de Trabajo de Fin de Grado. ¡Gracias a todos por ser parte de este viaje!
 
 ## Referencias
+
 1. **Angular y TypeScript**
+
    - Angular Documentation: https://angular.io/docs
    - TypeScript Documentation: https://www.typescriptlang.org/docs/
    - Pro Angular (Apress, Adam Freeman): https://www.apress.com/gp/book/9781484244470
    - Angular Projects (Packt Publishing): https://www.packtpub.com/product/angular-projects/9781789951995
 
 2. **CSS**
+
    - MDN Web Docs (CSS): https://developer.mozilla.org/en-US/docs/Web/CSS
    - CSS-Tricks: https://css-tricks.com/
    - CSS: The Definitive Guide (O'Reilly Media): https://www.oreilly.com/library/view/css-the-definitive/9781449325053/
    - A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 3. **Microservicios de Mensajería Instantánea con Socket.io y Express.js**
+
    - Socket.io Documentation: https://socket.io/docs/
    - Express.js Documentation: https://expressjs.com/en/starter/installing.html
    - Pro Express.js (Apress, Azat Mardan): https://www.apress.com/gp/book/9781484200384
@@ -301,6 +353,7 @@ En resumen, el "Programming Chat App" es un paso fundamental hacia la digitaliza
    - Real-Time Web Application Development with Express.js and Socket.io: https://www.oreilly.com/library/view/web-development-with/9781492053514/
 
 4. **Microservicios de API con FastAPI en Python**
+
    - FastAPI Documentation: https://fastapi.tiangolo.com/
    - FastAPI GitHub Repository: https://github.com/tiangolo/fastapi
    - Modern Web APIs with FastAPI (Packt Publishing): https://www.packtpub.com/product/modern-web-apis-with-fastapi/9781801079275

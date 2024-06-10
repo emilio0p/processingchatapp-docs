@@ -67,12 +67,10 @@
         </div>
       </div>
     </nav>
-  
 
     <main>
       <!-- Contenido específico de la página de Instalación -->
       <h1>Guía de Instalación</h1>
-
       <p>
         Desde el punto de vista del desarrollador que desea descargar y
         personalizar el proyecto desde GitHub, los pasos a seguir serían los
@@ -81,48 +79,69 @@
 
       <h3>Requisitos Previos</h3>
       <ul>
-        <li>Node.js</li>
-        <li>MongoDB</li>
+        <li>Python 3.x</li>
+        <li>Node.js y npm (o yarn)</li>
+        <li>Git</li>
       </ul>
 
-      <h3>Pasos de Instalación</h3>
+      <h3>Backend (FastAPI)</h3>
       <ol>
         <li>
-          <strong>Clonar el Repositorio desde GitHub:</strong>
-          <p>
-            Para comenzar, necesitas clonar el repositorio del proyecto desde
-            GitHub. Abre la terminal y ejecuta el siguiente comando:
-          </p>
-          <pre><code>git clone &lt;URL_del_repositorio&gt;</code></pre>
+          Clonar el repositorio "processing-chat-fastapi":
+          <pre><code>git clone https://github.com/emilio0p/processing-chat-fastapi.git</code></pre>
         </li>
         <li>
-          <strong>Instalar las Dependencias:</strong>
-          <p>
-            Una vez que se haya clonado el repositorio, navegamos hasta la
-            carpeta del proyecto en la terminal y ejecutaremos el siguiente
-            comando para instalar todas las dependencias necesarias:
-          </p>
-          <pre><code>npm install</code></pre>
-          <p>
-            Este comando instalará todas las dependencias especificadas en el
-            archivo <code>package.json</code>, incluyendo las librerías y
-            frameworks necesarios para el funcionamiento del proyecto.
-          </p>
+          Acceder a la carpeta del backend:
+          <pre><code>cd processing-chat-fastapi</code></pre>
         </li>
         <li>
-          <strong>Iniciar el Servidor:</strong>
-          <p>
-            Después de instalar las dependencias, podemos iniciar el servidor
-            ejecutando el siguiente comando:
-          </p>
-          <pre><code>node server.js</code></pre>
-          <p>
-            Este comando iniciará el servidor y hará que la aplicación esté
-            disponible en nuestro entorno local para su visualización y
-            personalización.
-          </p>
+          Crear y activar un entorno virtual de Python:
+          <pre><code>python -m venv venv</code></pre>
+          <pre><code>source venv/bin/activate</code></pre>
+        </li>
+        <li>
+          Instalar las dependencias del backend:
+          <pre><code>pip install -r requirements.txt</code></pre>
+        </li>
+        <li>
+          Configurar las variables de entorno necesarias, como la conexión a la
+          base de datos y las claves de autenticación.
+        </li>
+        <li>
+          Iniciar el servidor FastAPI:
+          <pre><code>uvicorn main:app --reload</code></pre>
         </li>
       </ol>
+
+      <h3>Frontend (Angular)</h3>
+      <ol>
+        <li>
+          Clonar el repositorio "processing-chat-angular":
+          <pre><code>git clone https://github.com/emilio0p/processing-chat-angular.git</code></pre>
+        </li>
+        <li>
+          Acceder a la carpeta del frontend:
+          <pre><code>cd processing-chat-angular</code></pre>
+        </li>
+        <li>
+          Instalar las dependencias del frontend:
+          <pre><code>npm install</code></pre>
+        </li>
+        <li>
+          Configurar las variables de entorno necesarias, como la URL de la API
+          del backend.
+        </li>
+        <li>
+          Iniciar el servidor de desarrollo de Angular:
+          <pre><code>ng serve</code></pre>
+        </li>
+      </ol>
+
+      <h3>Acceder a la Aplicación</h3>
+      <p>
+        Abre tu navegador web y visita <code>http://localhost:4200</code> para
+        acceder a la aplicación.
+      </p>
     </main>
 
     <footer>

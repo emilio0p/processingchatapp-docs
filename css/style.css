@@ -96,6 +96,9 @@ code {
     border-radius: 2px;
 }
 
+pre{
+    margin-top: 20px;
+}
 a.enlace {
     color: #007bff;
     text-decoration: underline;
