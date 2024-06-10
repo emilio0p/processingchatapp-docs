@@ -1,0 +1,187 @@
+
+.botonTransparente {
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 17px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.botonTransparente:hover {
+    transition: all 0.5s;
+    color: var(--cafe);
+    background-color: white;
+}
+
+.botonNegro {
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 15px;
+    background-color: var(--cafe);
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.botonNegro:hover {
+    transition: all 0.5s;
+    color: var(--cafe);
+    background: white;
+}
+
+
+/*Navegacion*/
+
+nav::-webkit-scrollbar { /*background*/
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    border-radius: 20px;
+    padding: 10px 0px 30px 0px;
+    margin: 10px 0px 10px 0px;
+
+    position: fixed;
+    z-index: 1;
+    left: 10px; 
+
+    width: 20em;
+    max-height: 650px;
+    overflow-y:auto;
+
+    backdrop-filter: blur(40px);
+    color: white;
+    background-color: #80B198;
+    transition: width 0.5s, max-height 0.5s 0.5s;
+}
+
+.ocultarSeccionNav {
+    width: 50px;
+    max-height: 10px;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: width 0.5s, max-height 0.5s 0.5s, border-radius 0.5s;
+}
+
+.ocultarSeccionNav:hover {
+    width: 70px;
+}
+
+.ocultarSeccionNav .seccionNav,
+.ocultarSeccionNav h2 {
+    transform: translateX(220px);
+    transition: all 0s;
+}
+
+.icon {
+    color: white;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+  /* Iconos de navegación */
+.icono-nav {
+    font-size: 25px;
+    color: #f5f6f7;
+    transition: color 0.3s;
+}
+  
+.header .icono-nav {
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    width: 25px;
+    height: auto;
+    background-color: #80B198;
+  }
+
+nav h2 {
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+    color: white;
+}
+
+nav p {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav .header { 
+    margin: 20px 0px;
+}
+
+nav .visible {
+    display: flex;
+    align-items: center;
+    height: 63px;
+}
+
+nav .visible p{
+    margin-left: 20px;
+    width: 175px;
+}
+
+nav .seccionNav {
+    overflow: hidden;
+    gap: 0px;
+
+    width: fit-content;
+    margin-left: 30px;
+}
+
+
+footer {
+    color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+
+}
+/* Responsive */
+
+/* phone */
+@media (min-width: 0px) and (max-width: 760px) {
+    .informacionGeneral>div:first-child {
+        border-right: 0px solid black;
+    }
+
+    .botonTransparente {
+        background-color: white;
+        color: var(--cafe);
+    }
+
+    .botonNegro {
+        color: var(--cafe);
+        background-color: white;
+    }
+
+    .informacionGeneral>div:first-child {
+        border-bottom: 1px solid black;
+    }
+
+    .ocultarSeccionNav:hover {
+        width: 50px;
+    }
+    
+
+}

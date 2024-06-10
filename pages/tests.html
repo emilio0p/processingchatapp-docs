@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tests</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <nav class="ocultarSeccionNav" id="nav">
+      <!-- Tipo 1 -->
+      <div class="header">
+        <h2>Processing Chat App</h2>
+        <i id="mostrarOcultarNav" class="fas fa-bars icono-nav"></i>
+      </div>
+
+      <!-- Tipo 2 -->
+      <div class="seccionNav">
+        <div class="visible">
+          <i class="fa-solid fa-user" title="Emilio Orduña Peña"></i>
+          <a href="../index.html"><p>Sobre mí</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-home" title="Inicio"></i>
+          <a href="home.html"><p>Introducción</p></a>
+        </div>
+        <div class="visible">
+          <i class="fa-solid fa-bolt" title="Funcionalidades y Tecnologías"></i>
+          <a href="features.html"><p>Funcionalidades</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-download" title="Instalación"></i>
+          <a href="installation.html"><p>Instalación</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-play-circle" title="Uso"></i>
+          <a href="usage.html"><p>Uso</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-sitemap" title="Diagramas"></i>
+          <a href="diagrams.html"><p>Diagramas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fa-solid fa-vial-circle-check" title="Pruebas"></i>
+          <a href="tests.html"><p>Pruebas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-lightbulb" title="Conclusión"></i>
+          <a href="conclusion.html"><p>Conclusión</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-link" title="Referencias"></i>
+          <a href="references.html"><p>Referencias</p></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Contenido específico de la página de Tests -->
+      <h1>Tests</h1>
+      <section>
+        <h3>Pruebas de Funcionalidad</h3>
+        <p>
+          Vamos a realizar unas pruebas para verificar la funcionalidad del
+          sistema.
+        </p>
+        <div class="test-scren">
+          <ul>
+            <li><h4>Prueba 1: Verificación del inicio de sesión</h4></li>
+            <div class="screenshot">
+              <img
+                src="../img/credenciales-incorrectas.png"
+                alt="Credenciales incorrectas"
+              />
+              <p>
+                Si ponemos usuario o contraseña incorrectas, nos lo muestra con
+                la imagen anterior.
+              </p>
+            </div>
+            <div class="screenshot">
+              <img
+                src="../img/credenciales-correctas.png"
+                alt="Credenciales correctas"
+              />
+              <p>
+                Al poner las credenciales correctas, nos muestra un mensaje de
+                inicio de sesión correcto.
+              </p>
+            </div>
+
+            <li><h4>Prueba 2: Comprobación del registro de usuarios</h4></li>
+            <div class="screenshot">
+              <img
+                src="../img/añadir-usuario-incorrecto.png"
+                alt="Usuario incorrecto"
+              />
+              <p>
+                Si ponemos los datos de usuario incorrectos o ya existentes, nos
+                informa del error.
+              </p>
+            </div>
+            <div class="screenshot">
+              <img
+                src="../img/añadir-usuario-correcto.png"
+                alt="Usuario correcto"
+              />
+              <img
+                src="../img/añadir-usuario-correcto2.png"
+                alt="Usuario correcto"
+              />
+              <p>
+                Si ponemos los datos de usuario corrector, nos crea el usuario y
+                lo registra en la base de datos.
+              </p>
+            </div>
+
+            <li><h4>Prueba 3: Cambiar contraseña</h4></li>
+            <div class="screenshot">
+              <img
+                src="../img/cambiar-contraseña-incorrecta.png"
+                alt="Contraseña incorrecta"
+              />
+              <img
+                src="../img/cambiar-contraseña-incorrecta2.png"
+                alt="Contraseña incorrecta"
+              />
+              <p>
+                Abrimos el formulario y nos indica los campos obligatorios, los
+                rellenamos y lo enviamos.
+              </p>
+            </div>
+            <div class="screenshot">
+              <img
+                src="../img/cambiar-contraseña-correcta.png"
+                alt="Contraseña correcta"
+              />
+              <p>Al rellenar el formulario, lo confirmamos.</p>
+            </div>
+
+            <li><h4>Prueba 4: Creación de un nuevo chat</h4></li>
+            <div class="screenshot">
+              <img
+                src="../img/crear-chat-incorrecto.png"
+                alt="Chat incorrecto"
+              />
+              <p>
+                Si no rellenamos todos los campos al crear un nuevo chat, nos
+                informa del error.
+              </p>
+            </div>
+            <div class="screenshot">
+              <img src="../img/crear-chat-correcto.png" alt="Chat correto" />
+              <p>
+                Cuando ponemos bien todos los campos, nos crea un nuevo chat que
+                se abrira debajo de todos
+              </p>
+            </div>
+
+            <li><h4>Prueba 5: Eliminar un chat</h4></li>
+            <div class="screenshot">
+              <img
+                src="../img/chat-eliminado-correcto.png"
+                alt="Chat eliminado"
+              />
+              <p>
+                Cuando eliminamos un chat, nos muestra un mensaje de éxito y nos
+                redirige.
+              </p>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span
+        >&copy; 2024 Emilio Orduña Peña | Todos los derechos reservados</span
+      >
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

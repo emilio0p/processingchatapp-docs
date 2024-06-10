@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalación</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="body">
+    <nav class="ocultarSeccionNav" id="nav">
+      <!-- Tipo 1 -->
+      <div class="header">
+        <h2>Processing Chat App</h2>
+        <i id="mostrarOcultarNav" class="fas fa-bars icono-nav"></i>
+      </div>
+
+      <!-- Tipo 2 -->
+      <div class="seccionNav">
+        <div class="visible">
+          <i class="fa-solid fa-user" title="Emilio Orduña Peña"></i>
+          <a href="../index.html"><p>Sobre mí</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-home" title="Inicio"></i>
+          <a href="home.html"><p>Introducción</p></a>
+        </div>
+        <div class="visible">
+          <i class="fa-solid fa-bolt" title="Funcionalidades y Tecnologías"></i>
+          <a href="features.html"><p>Funcionalidades</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-download" title="Instalación"></i>
+          <a href="installation.html"><p>Instalación</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-play-circle" title="Uso"></i>
+          <a href="usage.html"><p>Uso</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-sitemap" title="Diagramas"></i>
+          <a href="diagrams.html"><p>Diagramas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fa-solid fa-vial-circle-check" title="Pruebas"></i>
+          <a href="tests.html"><p>Pruebas</p></a>
+        </div>
+
+        <div class="visible">
+          <i class="fas fa-lightbulb" title="Conclusión"></i>
+          <a href="conclusion.html"><p>Conclusión</p></a>
+        </div>
+        <div class="visible">
+          <i class="fas fa-link" title="Referencias"></i>
+          <a href="references.html"><p>Referencias</p></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Contenido específico de la página de Funcionalidades -->
+      <h1>Funcionalidades y Tecnologías</h1>
+
+      <h3>Funcionalidades:</h3>
+      <ul>
+        <li>Chat en tiempo real entre cliente y administrador.</li>
+        <li>Interfaz intuitiva y fácil de usar.</li>
+        <li>
+          Toma de datos para la personalización a través de un formulario.
+        </li>
+        <li>Registro y seguimiento de clientes.</li>
+        <li>Control del estado de productos y chats.</li>
+        <li>Agregar y eliminar chats</li>
+        <li>Cambiar la contraseña</li>
+      </ul>
+
+      <h3>Tecnologías Utilizadas:</h3>
+      <ul>
+        <li>
+          <strong>Front-end:</strong>
+          <ul>
+            <li>HTML, CSS, Angular, TypeScript.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Back-end:</strong>
+          <ul>
+            <li>
+              <strong>Microservicio de mensajería instantánea:</strong>
+              <ul>
+                <li>
+                  Implementado con la librería Socket.io y Express.js utilizando
+                  JavaScript.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Microservicio de API:</strong>
+              <ul>
+                <li>
+                  Desarrollado con FastAPI en Python, encargado de las
+                  operaciones CRUD de usuarios, chats y mensajes.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <span
+        >&copy; 2024 Emilio Orduña Peña | Todos los derechos reservados</span
+      >
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
